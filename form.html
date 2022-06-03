@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Table</a> |
+            <a href="form.html">Forms</a>
+        </nav>
+    </header>
+
+    <main>
+        <center>
+            <h1>This is our Forms page</h1>
+        </center>
+
+        <h2>Employee Interests Survey Form</h2>
+
+        <center>
+            <fieldset style="width: 40%">
+                <legend>Survey Form</legend>
+                <form>
+                    <label for="name">Enter your name:</label>
+                    <input type="text" id="name" minlength="30" maxlength="50" name="userName" required><br><br>
+                    <!-- <label for="phone">Enter your phone number:</label>
+                    <input type="number" id="phone" minlength="11" maxlength="11"><br><br> -->
+
+                    <label for="department">Enter your department:</label>
+                    <input type="text" id="department" name="department"><br><br>
+
+                    <label for="yourself">Tell us a little about yourself:</label>
+                    <textarea id="yourself" rows="3" name="yourself"></textarea><br><br>
+                    <!-- <input type="text" id="yourself"><br><br> -->
+
+                    <label>Do you exercise at home:</label>
+                    <label for="exerciseYes">Yes</label>
+                    <input type="radio" id="exerciseYes" name="exercise" value="yes">
+                    <label for="exerciseNo">No</label>
+                    <input type="radio" id="exerciseNo" name="exercise" value="no"><br><br>
+
+                    <p>How do you like to read our favourite topics?</p>
+                    <input type="checkbox" name="topics" value="books" id="books"><label for="books">Books</label>
+                    <input type="checkbox" name="topics" value="onlineResources" id="onlineResources"><label
+                        for="onlineResources">Online resources</label>
+                    <input type="checkbox" name="topics" value="phoneApps" id="phoneApps"><label for="phoneApps">Phone
+                        Apps</label>
+                    <input type="checkbox" name="topics" value="magzines" id="magzines"><label
+                        for="magzines">Magzines</label>
+
+                    <br><br>
+                    <label>What genre of movies do you like?</label>
+                    <select name="movie">
+                        <option value="">Select a genre of movie</option>
+                        <option value="action">Action</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="horror">Horror</option>
+                    </select>
+
+                    <br><br>
+                    <input type="date"><br><br>
+                    <input type="file" name="" id=""><br><br>
+                    <label for="password">Enter your password</label>
+                    <input type="password" id="password" placeholder="Enter your password"><br><br>
+
+                    <input type="submit">
+                </form>
+            </fieldset>
+        </center>
+    </main>
+
+    <footer>
+        <p>&copy; 2022. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
